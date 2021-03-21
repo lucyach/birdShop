@@ -9,3 +9,10 @@ p {
 #newCustomerBtn {
     margin: 15px;
 }
+
+.form-control {
+    width: 30px;
+    margin: 15px;
+  }
+
+  
