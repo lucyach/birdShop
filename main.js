@@ -1,4 +1,5 @@
 var customers = {};
+var budgieDropdownDropped = false;
 // customer[1] = {}; // "pets"
 // dict[1][1] = {};
 // dict[foo][bar][buz] = {};
@@ -12,16 +13,25 @@ function newCustomer() {
     console.log("got it!");
 }
 
+
 function budgieDropdown() {
-    console.log("here");
-    var text = document.createElement("P");
-    text.className = "card-text";
-    var waitingList = document.createTextNode("hello world");
-    text.appendChild(waitingList);
-    var element = document.getElementById("budgieList");
-    element.appendChild(text);
+    if (!budgieDropdownDropped) {
+        console.log("opening dropdown");
+        budgieDropdownDropped = true;
+        var newDiv = document.createElement("DIV");
+        newDiv.id = "newDivId";
+        var text = document.createElement("P");
+        newDiv.appendChild(text);
+        text.className = "card-text";
+        var waitingList = document.createTextNode("hello world");
+        text.appendChild(waitingList);
+        var element = document.getElementById("budgieList");
+        element.appendChild(newDiv);
+    } else {
+        console.log("closing dropdown")
+        budgieDropdownDropped = false;
+        var myobj = document.getElementById("newDivId");
+        myobj.remove();
+    }
 }
-
-
-
 
