@@ -13,5 +13,15 @@ function newCustomer() {
 }
 
 function budgieDropdown() {
-    console.log("noteddd");
+    console.log("here");
+    var text = document.createElement("P");
+    text.className = "card-text";
+    var waitingList = document.createTextNode("hello world");
+    text.appendChild(waitingList);
+    var element = document.getElementById("budgieList");
+    element.appendChild(text);
 }
+
+
+
+
