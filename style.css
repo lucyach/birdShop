@@ -17,5 +17,10 @@ p {
 
 .card {
     margin: 15px;
+
 }
 
+.stockCards {
+    display: flex;
+    flex-wrap: wrap;
+}

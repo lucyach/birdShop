@@ -1,5 +1,6 @@
 var customers = {};
 var budgieDropdownDropped = false;
+var budgieWaitingList = ("number1", "number2", "number3", "number4");
 // customer[1] = {}; // "pets"
 // dict[1][1] = {};
 // dict[foo][bar][buz] = {};
